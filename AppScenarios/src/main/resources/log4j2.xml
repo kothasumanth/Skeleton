@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+        <File name="fileLogger" fileName="AppScenario-${date:yyyyMMdd}.html"
+                     filePattern="AppScenario-${date:yyyyMMdd}.html" ignoreExceptions="false">
+            <HTMLLayout charset="UTF-8" title="Howtodoinjava Info Logs" locationInfo="true" />
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+        </File>
+        <File name="FileAppender" fileName="AppScenario-${date:yyyyMMdd}.log" immediateFlush="false" append="true">
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="stepDefinition" level="debug" additivity="false">
+            <AppenderRef ref="fileLogger" level="debug" />
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="ConsoleAppender" level="debug"/>
+            <AppenderRef ref="FileAppender" level="warn"/>
+<!--            <AppenderRef ref="fileLogger" level="debug" />-->
+        </Root>
+    </Loggers>
+</Configuration>

@@ -5,17 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Skeleton</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>Logger</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <modules>
 
-    <module>AppScenarios</module>
-    <module>Logger</module>
-  </modules>
-
-  <name>Skeleton</name>
-  <description>A simple Skeleton.</description>
+  <name>Logger</name>
+  <description>A simple Logger.</description>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -31,28 +25,16 @@
       <artifactId>junit</artifactId>
       <version>4.11</version>
     </dependency>
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-core</artifactId>
-      <version>4.7.2</version>
-    </dependency>
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-junit</artifactId>
-      <version>4.7.2</version>
-    </dependency>
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-java</artifactId>
-      <version>4.7.2</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-picocontainer</artifactId>
-      <version>5.5.0</version>
-      <scope>test</scope>
-    </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.13.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.13.0</version>
+      </dependency>
   </dependencies>
 
   <build>
