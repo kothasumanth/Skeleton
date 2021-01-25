@@ -30,3 +30,9 @@ This site was built using [GitHub Pages](https://docs.github.com/en/github/writi
 # Improvements
 
 # Known Bugs
+
+# About ME
+
+Me `Sumanth Kotha`, you can contact me @ [kotha.sumanth@gmail.com](mailto:kotha.sumanth@gmail.com)
+
+<a href="mailto:sumanth.kotha@gmail.com?"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
