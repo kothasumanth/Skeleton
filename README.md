@@ -41,5 +41,5 @@ Use `git status` to list all new or modified files that haven't yet been committ
 
 This site was built using [GitHub Pages](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax).
 
-<p class="text-right">Regards</p>
-<p class="text-right">Sumanth Kotha</p>
+<p align="right">Regards</p>
+<p align="right">Sumanth Kotha</p>
